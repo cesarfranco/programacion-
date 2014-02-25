@@ -1,0 +1,22 @@
+// errorescfe.cpp : Defines the entry point for the console application.
+//Autor: Cesar Franco
+//Fecha: 25/02/2014
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+int main() {
+	float base, altura, area;
+	cout<<"Ingrese la altura: ";
+	cin>>altura;
+	cout<<"Ingrese la base: ";
+	cin>>base;
+	area = (base*altura);
+	cout<<"El area del rectangulo es: ";
+	cout<<area;
+	getch();
+}
+
