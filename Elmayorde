@@ -1,0 +1,31 @@
+// Elmayordetresnumeroscfe.cpp : Defines the entry point for the console application.
+//Autor:Cesar Franco
+//Fecha:18 de marzo de 2014
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+void main ()
+{  int a,b,c; 
+   cout<<"Ingrese a: ";
+   cin>> a;
+   cout<<"Ingrese b: ";
+   cin>> b;
+   cout<< "Ingrese c: ";
+   cin>> c;
+   if(a>b)
+      if(a>c)
+		 cout<< "El mayor es: "<<a;
+	  else 
+		  cout<<c;
+   else
+	   if(b>c)
+		  cout<<b;
+	  else
+	  cout<<c;
+	  
+getch();
+
+}
