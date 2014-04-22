@@ -1,0 +1,50 @@
+// MCDde3numeros.cpp : Defines the entry point for the console application.
+// Autor: Cesar Franco
+// Fecha: 22/04/2014
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+
+
+void main ()
+{
+	int a,b,c,mcd,menor,cont;
+	cout<<"Ingrese el valor de a: ";
+	cin>>a;
+	cout<<"Ingrese el valor de b: ";
+	cin>>b;
+	cout<<"Ingrese el valor de c: ";
+	cin>>c;
+	if (a<b && a<c)
+		menor=a;
+	else
+		if (b<a && b<c)
+			menor=b;
+		else 
+			menor=c;
+
+		mcd=1;
+		cont=2;
+		while (cont<=menor)
+        {
+
+			if ((a%cont==0) && (b%cont==0) && (c%cont==0))
+            {
+				a=a/cont;
+				b=b/cont;
+				c=c/cont;
+				menor=menor/cont;
+				mcd=mcd*cont;
+				cont=cont-1;
+            }
+			cont=cont+1;
+            }
+		cout<< "El maximo comun divisor es: "<<mcd;
+
+getch();
+
+}
