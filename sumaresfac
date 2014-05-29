@@ -1,0 +1,27 @@
+// sumorestfac.cpp: define el punto de entrada de la aplicación de consola.
+// Autor:Cesar Franco
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+
+using namespace std;
+void main()
+{
+	int x,n,i,suma,factorial;
+	cout<<"introduzca x: ";
+	cin>>x;
+	cout<<"Introduzca n: ";
+	cin>>n;
+	suma=0;
+	factorial=1;
+	for(i=1;i<=n;i++)
+		factorial=factorial*i;
+	if(i%2==0)
+	suma= suma-(pow(x,i)/factorial);
+	else
+		suma= suma+(pow(x,i)/factorial);
+	cout<<suma;
+	getch;
+}
