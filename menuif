@@ -1,0 +1,47 @@
+// menuswitch.cpp: define el punto de entrada de la aplicación de consola.
+// Autor:Cesar Franco
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+void main ()
+{
+	int a,b,suma,resta,multiplicacion,dividir,op;
+	cout<<"Introduzca a:";
+	cin>>a;
+	cout<<"Introduzca b: ";
+	cin>>b;
+	do
+	{
+		cout<<"1.suma";
+		cout<<"2.resta";
+		cout<<"3.multiplicacion";
+		cout<<"4.dividir";
+		cout<<"5.salir";
+		cin>>op;
+		if(op==1)
+		{
+			suma=a+b;
+			cout<<suma;
+		}
+		if(op==2)
+		{
+			multiplicacion=a+b;
+			cout<<multiplicacion;
+		}
+		if(op==3)
+		{
+			dividir=a/b;
+			cout<<dividir;
+		}
+		if(op==4)
+		{
+			resta=a-b;
+			cout<<resta;
+		}
+		while(op!=0);
+		getch();
+
+}
