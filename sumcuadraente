@@ -1,0 +1,21 @@
+// sumcuadraente.cpp: define el punto de entrada de la aplicación de consola.
+// Autor:Cesar Franco
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+
+using namespace std;
+void main ()
+{
+	int n,s;
+	float i;
+	cout<<"Ingrese el valor de n: ";
+	cin>>n;
+	s=0;
+	for(i=n;i<=n;i++)
+		s=s+pow(i,2);
+	cout<<s;
+	getch();
+}
