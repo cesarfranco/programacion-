@@ -1,0 +1,27 @@
+#include <stdio.h> 
+float cubica(float numero) 
+{ 
+  float cubica; 
+  cubica = numero * numero * numero; 
+  return cubica; 
+}
+int main() 
+{ 
+  float numero; 
+  float cubo; 
+  int i=0; 
+  
+  while(numero >= -1000000) 
+  { 
+     if(i==0) 
+        puts("\nEscriba un numero real"); 
+     else 
+        puts("\nEscriba otro numero real"); 
+     scanf("%f", &numero); 
+     printf("%f elevado al cubo es %f\n", 
+        numero,cubo=cubica(numero)); 
+     i ++; 
+  } 
+  return 0; 
+} 
+
