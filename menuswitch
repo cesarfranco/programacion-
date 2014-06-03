@@ -1,0 +1,52 @@
+// menuswitch.cpp: define el punto de entrada de la aplicación de consola.
+// Autor:Cesar Franco
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+
+
+using namespace std;
+void main ()
+{
+	int opcion;
+	float a,l,o,r,pi,b,c,h;
+	do
+	{
+		cout<<"1.area del cuadrado: ";
+		cout<<"2.area del circulo: ";
+		cout<<"3.area del triangulo: ";
+		cout<<"o.salir";
+		cin>>o;
+		switch (opcion)
+case 1:
+		cout<<"Ingrese los lados: ";
+		cin>>l;
+		a=*;
+		cout<<"l";
+		break;
+case 2:
+			cout<<"ingrese el area: ";
+			cin>>a;
+			r=sqrt(3.14/a);
+			cout<<"r";
+			break;
+case 3:
+			cout<<"ingrese la base: ";
+			cin>>b;
+			cout<<"Ingrese altura: ";
+			cin>>h;
+			a=(b*h)/2;
+			cout<<"a";
+			break;
+case 0:
+	cout<<"Gracias por usar el sistema";
+	break;
+	default
+		cout<<"error";
+	}
+	while(opcion!=0);
+	getch;
+}
+
