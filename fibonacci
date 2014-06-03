@@ -1,0 +1,30 @@
+// fibonacci.cpp: define el punto de entrada de la aplicación de consola.
+// Autor:Cesar Franco
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+
+using namespace std;
+void main ()
+{
+	int a=0;
+	int b=1;
+	int c;//lee dato de teclado
+	float d;//suma a+b
+	int cont=2;
+	cout<<"Cuantos numeros de la serie fibonacci desea mostrar: ";
+	cin>>c;
+	cout<<a;
+	cout<<",";
+	while(cont<=c)
+	{
+		d=a+b;
+		cout<<d;cout<<",";
+		a=b;
+		b=d;
+		cont++;
+	}
+
+}
