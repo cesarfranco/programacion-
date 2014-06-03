@@ -1,0 +1,32 @@
+#include <stdio.h> 
+#include <math.h> 
+
+int exponenciacion (int numero, int numero); 
+
+int main() 
+{ 
+   int base, exponente; 
+   while (exponente >= 0) 
+   { 
+      printf("Escriba el numero que quiere potenciar: "); 
+      scanf("%d", &base); 
+      printf("Escriba el numero al que lo quiere elevar: "); 
+      scanf("%d", &exponente); 
+      printf("La potencia es: %d\n\n", exponenciacion(base, exponente)); 
+   } 
+   return 0; 
+} 
+
+int exponenciacion (int base, int expo) 
+{ 
+   int i, pot=1; 
+    
+   for (i=0; i<expo; i++) 
+      pot *= base; 
+      
+    
+   return pot;       
+                
+  
+} 
+    
