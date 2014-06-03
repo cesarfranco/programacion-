@@ -1,0 +1,22 @@
+// summasmenos.cpp: define el punto de entrada de la aplicación de consola.
+// Autor:Cesar Franco
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+void main ()
+{
+	int s,i,n;
+	cout<<"Introduzca el valor de n: ";
+	cin>>n;
+	s=0;
+	for(i=1;i<=n;i++)
+		if(i%2==0)
+			s=s-i;
+		else
+			s=s+i;
+	cout<<s;
+	getch();
+}
