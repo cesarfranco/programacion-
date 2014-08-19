@@ -1,0 +1,21 @@
+// holamundo.cpp : Defines the entry point for the console application.
+// Autor:Cesar Franco
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+void main()
+
+{
+	int edad;
+	cout<<"Ingrese tu edad: ";
+	cin>>edad;
+	cout<<"Tu edad es: ";
+	cout<<edad;
+	getch(); 
+	
+}
+
