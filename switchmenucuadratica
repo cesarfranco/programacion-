@@ -1,0 +1,105 @@
+// menuswitch.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "stdlib.h"
+#include "math.h"
+
+using namespace std;
+
+void main()
+
+{
+	int opc,a,b,c,x,x1,x2,base,altura,area,n;
+	cout<<"\tMENU\t";
+	cout<<"1.-par: ";
+	cout<<"2.-Impar: ";
+	cout<<"3.-Valor Absoluto: ";
+	cout<<"4.-Raiz cuadrada: ";
+	cout<<"5.-Area del triangulo: ";
+	cout<<"0.-Salir: ";
+	cout<<"Ingrese la opcion: ";
+	cin>>opc;
+
+	do
+	{
+		switch (opc)
+		{
+		case 1: cout<<"par\n";
+			    cout<<"Ingrese el numero: ";
+			    cin>>n;
+			if(n%2==0)
+				cout<<"Es par";
+			else
+				cout<<"Error";
+			getch();
+			break;
+			
+		case 2: cout<<"Impar\n";
+			    cout<<"Ingrese el numero: ";
+			    cin>>n;
+			if(n!=0)
+				cout<<"Es impar";
+			else 
+				cout<<"Erorr";
+			getch();
+			break;
+			
+		case 3:  cout<<"Valor absoluto\n";
+			cout<<"Ingrese el numero: ";
+			cin>>n;
+			if(n<0)
+				n=n*-1;
+				cout<<"El valor absoluto es: "<<n;
+				getch();
+				break;
+		case 4: cout<<"Ecuacion caudratica\n";
+			cout<<"Ingrese el valor de a: ";
+			cin>>a;
+			cout<<"Ingrese el valor de b: ";
+			cin>>b;
+			cout<<"Ingrese el valor de c: ";
+			cin>>c;
+			if (sqrt((b*b)-(4*a*c))>0)
+			{
+				x1=(-b+(sqrt(b*b)-(4*a*c))/2*a);
+			    x2=(-b-(sqrt(b*b)-(4*a*c))/2*a);
+				cout<<"x1"<<x1;
+				cout<<"x2"<<x2;
+			}
+			else 
+			{
+				if(sqrt((b*b)-(4*a*c))=0)
+
+				{x=-b/(2*a);
+				cout<<"x= "<<x;
+				}
+			}
+			getch();
+			break;
+		case 5: cout<<"area de un triangulo: ";
+			    cout<<"Ingrese la base: ";
+				cin>>base;
+			    cout<<"Ingrese la altura: ";
+				cin>>altura;
+				area=base*altura/2;
+				cout<<"El area es: "<<area;
+				getch();
+				break;
+		default: cout<<"\nError\n";
+		system ("cls");
+		}
+		}
+		while (opc!=0);
+		getch();
+}
+
+
+
+
+
+
+
+
